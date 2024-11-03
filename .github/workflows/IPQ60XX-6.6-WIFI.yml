@@ -93,7 +93,6 @@ jobs:
       run: |
         cd $OPENWRT_PATH
         echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
-        echo "src-git homeproxy https://github.com/muink/luci-app-homeproxy.git;master" >> "feeds.conf.default"
         ./scripts/feeds update -a
         ./scripts/feeds install -a
   
