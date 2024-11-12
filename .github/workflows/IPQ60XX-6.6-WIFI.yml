@@ -92,7 +92,9 @@ jobs:
     - name: Install Feeds
       run: |
         cd $OPENWRT_PATH
-        echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
+        /*echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"*/
+        rm -rf feeds.conf.default
+        wget https://raw.githubusercontent.com/koksaver/OpenWrt360_6.1/refs/heads/main/feeds/feeds.conf.default
         ./scripts/feeds update -a
         ./scripts/feeds install -a
   
