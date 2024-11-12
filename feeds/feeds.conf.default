@@ -1,6 +1,6 @@
 src-git packages https://github.com/immortalwrt/packages.git
-src-git homeproxy https://github.com/koksaver/homeproxy.git;tes
-src-git luci https://github.com/immortalwrt/luci.git
+#src-git homeproxy https://github.com/koksaver/homeproxy.git;tes
+src-git luci https://github.com/koksaver/luci-immortolwrt.git
 src-git routing https://git.openwrt.org/feed/routing.git
 src-git telephony https://git.openwrt.org/feed/telephony.git
 src-git nss_packages https://github.com/breeze303/nss-packages.git;NSS-12.5-K6.x
